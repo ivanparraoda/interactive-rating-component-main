@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(214, 16%, 9%);
+    --img-bg:hsla(216, 7%, 27%, 0.658);
+
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: var(--White);
+    background-color: var(--VeryDarkBlue);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+main, .thanks_state{
+    
+    transform: translate(0%, 50%);
+    background-color: var(--DarkBlue);
+    width: 260px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+
+.img_star{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: var(--img-bg);
+    border-radius: 100px;
+    margin-bottom: 15px;
+
+}
+
+.img_star>img{
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -60%);
+    
+}
+
+
+
+.container h1{
+    margin-bottom: 10px;
+}
+
+.container p{
+color: var(--White);
+font-weight: lighter;
+font-size: .8rem;
+margin-bottom: 15px;
+
+}
+
+.btn-selection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--img-bg);
+    color: var(--LightGrey);
+}
+
+.btn:first-child{
+    margin-left: -10px;
+    position: relative;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: var(--White);
+    background-color: var(--LightGrey);
+}
+
+.btn:active{
+    background-color: var(--Orange);
+    color: var(--White);
+
+}
+
+
+#submit{
+    font-size: .7rem;
+width: 100%;
+padding: 10px 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+border: none;
+border-radius: 20px;
+background-color: var(--Orange);
+color: var(--White);
+}
+
+#submit:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+    cursor: pointer;
+}
+
+.thanks_state{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks_state>img{
+    width: 100px;
+    margin-bottom: 20px;
+
+}
+.selection{
+    border-radius: 50px;
+    font-size: .75rem;
+    color: var(--Orange);
+    background-color: var(--img-bg);
+    padding: 5px 8px ;
+    margin-bottom: 20px;
+}
+.thanks_state h2{
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+.thanks{
+    font-size: .75rem;
+}
+
